@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 // Function to combine patient sets into a single JSON file
 export async function combinePatientSets() {
     const patientSetsFolder = path.join(__dirname, '../patient_sets');
-    const outputFilePath = path.join(__dirname, '../combined_patient_sets.json');
+    const outputFilePath = path.join(__dirname, '../output/combined_patient_sets.json');
 
     try {
         // Read all CSV files in the patient_sets folder

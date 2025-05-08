@@ -30,7 +30,7 @@ async function main() {
         const filePath = path.join(__dirname, 'data_sets/1st cohort_First day_anti ABO Ab IgG_GLAD.csv');
         let outputJson = generateJsonFromCsv(filePath);
         outputJson = mapJson(outputJson, combinedData);
-        const outputFilePath = path.join(__dirname, 'output.txt');
+        const outputFilePath = path.join(__dirname, 'output/output.txt');
         fs.writeFileSync(outputFilePath, JSON.stringify(outputJson, null, 2));
         console.log(`Generated JSON saved to ${outputFilePath}`);
     } catch (error) {
