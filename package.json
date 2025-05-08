@@ -1,0 +1,20 @@
+{
+  "name": "luminex_to_glad",
+  "version": "1.0.0",
+  "description": "Converts Luminex data for several patients and replicates to GLAD selections.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "process" : "node index.js"
+  },
+  "keywords": [
+    "luminex",
+    "glad"
+  ],
+  "author": "Akul Y. Mehta",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
+}
