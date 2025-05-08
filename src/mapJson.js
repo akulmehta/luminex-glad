@@ -1,9 +1,14 @@
 // Function to map outputJson with combinedData
-export function mapJson(outputJson, combinedData) {
+export function mapJson(outputJson, combinedData, analysisType) {
     return outputJson.map(item => {
         const match = combinedData.find(data => data['Tube ID'] === item.Title);
         if (match) {
             item.Title = `patientID-${match['Patient ID']}_bloodType-${match['Blood type']}_timePoint-${match['Time point']}_tubeID-${match['Tube ID']}`;
+            if (analysisType) {
+                item.Title += `_analysisType-${analysisType}`;
+                item.AnalysisType = analysisType;
+            }
+
             // Set barcolor based on Blood type (loose match for rhesus factor)
             const bloodTypeColors = {
                 'A': '#800000', // Maroon
