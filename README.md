@@ -106,7 +106,7 @@ Each processed file in `output/*_GLAD_selection.txt` contains an array of JSON o
 ## Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v16.0.0 or higher recommended)
+- [Node.js](https://nodejs.org/) (v24.13.0 or higher recommended)
 - `npm` (bundled with Node.js)
 
 ### Installation
